@@ -1,0 +1,1336 @@
+{
+  "matematicas": [
+    {
+      "pregunta": "¿Cuál es el resultado de 9 x 6?",
+      "opciones": ["A. 54", "B. 56", "C. 48", "D. 52"],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Qué número es primo?",
+      "opciones": ["A. 15", "B. 17", "C. 21", "D. 27"],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Cuál es la fórmula para el área del rectángulo?",
+      "opciones": ["A. base + altura", "B. base x altura", "C. 2 x base x altura", "D. (base x altura)/2"],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Cuánto es la raíz cuadrada de 81?",
+      "opciones": ["A. 7", "B. 8", "C. 9", "D. 10"],
+      "respuesta_correcta": "C"
+    },
+    {
+      "pregunta": "¿Cuál es el valor de π (pi) aproximado?",
+      "opciones": ["A. 3.14", "B. 2.17", "C. 3.41", "D. 3.41"],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Qué representa el número '0' en matemáticas?",
+      "opciones": ["A. El primero número natural", "B. Un número negativo", "C. La ausencia de cantidad", "D. El infinito"],
+      "respuesta_correcta": "C"
+    },
+    {
+      "pregunta": "¿Cuál es la fórmula para el perímetro de un cuadrado?",
+      "opciones": ["A. 4 x lado", "B. lado x lado", "C. 2 x lado", "D. lado + lado"],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Cuánto es 2 elevado a la 5?",
+      "opciones": ["A. 10", "B. 16", "C. 32", "D. 64"],
+      "respuesta_correcta": "C"
+    },
+    {
+      "pregunta": "¿Qué es un número racional?",
+      "opciones": ["A. Un número que no se puede expresar como fracción", "B. Un número que puede escribirse como fracción", "C. Un número decimal infinito no periódico", "D. Un número negativo"],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Qué resultado da la suma de los ángulos internos de un triángulo?",
+      "opciones": ["A. 90 grados", "B. 180 grados", "C. 270 grados", "D. 360 grados"],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Cuál es la fórmula para el área de un círculo?",
+      "opciones": ["A. π x radio", "B. 2 x π x radio", "C. π x radio²", "D. π x diámetro"],
+      "respuesta_correcta": "C"
+    },
+    {
+      "pregunta": "¿Qué es un número irracional?",
+      "opciones": ["A. Un número que puede expresarse como fracción", "B. Un número decimal periódico", "C. Un número decimal infinito no periódico", "D. Un número natural"],
+      "respuesta_correcta": "C"
+    },
+    {
+      "pregunta": "¿Qué es el teorema de Pitágoras?",
+      "opciones": [
+        "A. a² + b² = c² en un triángulo rectángulo",
+        "B. a + b = c en un triángulo equilátero",
+        "C. a² - b² = c² en un triángulo isósceles",
+        "D. a x b = c en un cuadrado"
+      ],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Cuál es la fórmula para el volumen de un cubo?",
+      "opciones": ["A. lado³", "B. lado x lado", "C. 6 x lado²", "D. 4 x lado"],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Qué es una función en matemáticas?",
+      "opciones": [
+        "A. Relación entre dos conjuntos donde a cada elemento del primero le corresponde uno del segundo",
+        "B. Operación aritmética",
+        "C. Suma de números",
+        "D. Ecuación de segundo grado"
+      ],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Qué resultado da la suma de los ángulos internos de un cuadrilátero?",
+      "opciones": ["A. 360 grados", "B. 180 grados", "C. 90 grados", "D. 270 grados"],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Qué es un polígono regular?",
+      "opciones": [
+        "A. Polígono con lados iguales y ángulos iguales",
+        "B. Polígono con lados desiguales",
+        "C. Polígono con ángulos rectos",
+        "D. Polígono con lados paralelos"
+      ],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Qué representa la pendiente de una recta en geometría analítica?",
+      "opciones": [
+        "A. El ángulo de inclinación respecto al eje X",
+        "B. La intersección con el eje Y",
+        "C. La distancia entre dos puntos",
+        "D. La longitud de la recta"
+      ],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Qué es un número compuesto?",
+      "opciones": ["A. Un número que sólo tiene dos divisores", "B. Un número que tiene más de dos divisores", "C. Un número primo", "D. Un número negativo"],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Cuál es la suma de los ángulos internos de un pentágono?",
+      "opciones": ["A. 540 grados", "B. 360 grados", "C. 450 grados", "D. 720 grados"],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Qué es un logaritmo?",
+      "opciones": [
+        "A. La inversa de una potencia",
+        "B. Una raíz cuadrada",
+        "C. Una suma",
+        "D. Una resta"
+      ],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Cuál es la derivada de una constante?",
+      "opciones": ["A. La constante", "B. 0", "C. 1", "D. No existe"],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Qué es un ángulo recto?",
+      "opciones": ["A. 45 grados", "B. 90 grados", "C. 180 grados", "D. 360 grados"],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Qué es la media aritmética?",
+      "opciones": [
+        "A. El valor que más se repite",
+        "B. La suma de valores dividida entre el número de valores",
+        "C. El valor central de un conjunto ordenado",
+        "D. La diferencia entre el máximo y el mínimo"
+      ],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Qué es una ecuación cuadrática?",
+      "opciones": [
+        "A. Una ecuación de primer grado",
+        "B. Una ecuación donde el mayor exponente es 2",
+        "C. Una ecuación lineal",
+        "D. Una ecuación sin variables"
+      ],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Cuál es la fórmula para la suma de los ángulos internos de un polígono de n lados?",
+      "opciones": [
+        "A. (n - 2) x 180 grados",
+        "B. n x 90 grados",
+        "C. n x 360 grados",
+        "D. (n - 1) x 90 grados"
+      ],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Cuál es el valor de la raíz cuadrada de 100?",
+      "opciones": ["A. 10", "B. 20", "C. 5", "D. 15"],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Qué representa la variable 'x' en una ecuación?",
+      "opciones": [
+        "A. La incógnita o valor desconocido",
+        "B. Un número fijo",
+        "C. Una constante",
+        "D. Un operador"
+      ],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Cuál es la fórmula para calcular el interés simple?",
+      "opciones": [
+        "A. I = P x r x t",
+        "B. I = P + r + t",
+        "C. I = P / r x t",
+        "D. I = P x r / t"
+      ],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Cuál es el valor de 7 factorial (7!)?",
+      "opciones": ["A. 5040", "B. 720", "C. 120", "D. 40320"],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Qué es una progresión aritmética?",
+      "opciones": [
+        "A. Una secuencia donde la diferencia entre términos es constante",
+        "B. Una secuencia donde cada término es el doble del anterior",
+        "C. Una secuencia de números primos",
+        "D. Una secuencia decreciente"
+      ],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Qué es un número negativo?",
+      "opciones": [
+        "A. Un número menor que cero",
+        "B. Un número mayor que cero",
+        "C. Un número positivo",
+        "D. Un número impar"
+      ],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Cuál es el resultado de la suma 25 + 37?",
+      "opciones": ["A. 52", "B. 62", "C. 72", "D. 57"],
+      "respuesta_correcta": "C"
+    },
+    {
+      "pregunta": "¿Qué es un sistema de ecuaciones?",
+      "opciones": [
+        "A. Un conjunto de ecuaciones que se resuelven juntas",
+        "B. Una ecuación con una incógnita",
+        "C. Una función",
+        "D. Un polinomio"
+      ],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Qué es la mediana en un conjunto de datos?",
+      "opciones": [
+        "A. El valor que más se repite",
+        "B. El valor central cuando los datos están ordenados",
+        "C. La suma de todos los datos",
+        "D. El promedio"
+      ],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Cuál es el valor de 0 elevado a cualquier número positivo?",
+      "opciones": ["A. 0", "B. 1", "C. El número mismo", "D. Indefinido"],
+      "respuesta_correcta": "A"
+    }],
+  "historia": [
+    {
+      "pregunta": "¿En qué año llegó Cristóbal Colón a América?",
+      "opciones": ["A. 1492", "B. 1500", "C. 1485", "D. 1510"],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Quién fue el primer emperador romano?",
+      "opciones": ["A. Julio César", "B. Nerón", "C. Augusto", "D. Calígula"],
+      "respuesta_correcta": "C"
+    },
+    {
+      "pregunta": "¿Qué acontecimiento marcó el fin de la Edad Media?",
+      "opciones": ["A. La caída de Roma", "B. El descubrimiento de América", "C. La Revolución Francesa", "D. La invención de la imprenta"],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Cuál fue la principal causa de la Primera Guerra Mundial?",
+      "opciones": ["A. La crisis económica", "B. El asesinato del archiduque Francisco Fernando", "C. La invasión de Polonia", "D. La Revolución Industrial"],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Quién lideró la independencia de México?",
+      "opciones": ["A. Simón Bolívar", "B. Miguel Hidalgo", "C. José de San Martín", "D. Emiliano Zapata"],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Cuál civilización construyó Machu Picchu?",
+      "opciones": ["A. Azteca", "B. Maya", "C. Inca", "D. Olmeca"],
+      "respuesta_correcta": "C"
+    },
+    {
+      "pregunta": "¿En qué año se firmó la Declaración de Independencia de Estados Unidos?",
+      "opciones": ["A. 1776", "B. 1783", "C. 1791", "D. 1800"],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Quién fue Cleopatra?",
+      "opciones": ["A. Reina de Egipto", "B. Emperatriz romana", "C. Reina de Babilonia", "D. Princesa griega"],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Qué revolución dio inicio en 1917 en Rusia?",
+      "opciones": ["A. Revolución Francesa", "B. Revolución Rusa", "C. Revolución Industrial", "D. Revolución Americana"],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Qué fue la Guerra Fría?",
+      "opciones": ["A. Guerra entre EE.UU. y Alemania", "B. Conflicto ideológico entre EE.UU. y la URSS", "C. Guerra mundial", "D. Guerra civil española"],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Quién fue Napoleón Bonaparte?",
+      "opciones": ["A. Emperador francés", "B. Rey inglés", "C. General ruso", "D. Presidente estadounidense"],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Qué imperio cayó en 1453 con la toma de Constantinopla?",
+      "opciones": ["A. Imperio Romano", "B. Imperio Bizantino", "C. Imperio Otomano", "D. Imperio Persa"],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Cuál fue la causa principal de la Revolución Francesa?",
+      "opciones": ["A. Crisis económica y social", "B. Invasión extranjera", "C. Cambios climáticos", "D. Descubrimiento de América"],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Qué tratado puso fin a la Primera Guerra Mundial?",
+      "opciones": ["A. Tratado de Versalles", "B. Tratado de París", "C. Tratado de Tordesillas", "D. Tratado de Utrecht"],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Quién fue Simón Bolívar?",
+      "opciones": ["A. Libertador de varios países sudamericanos", "B. Conquistador español", "C. Emperador mexicano", "D. Presidente brasileño"],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Qué país fue invadido en 1939 dando inicio a la Segunda Guerra Mundial?",
+      "opciones": ["A. Francia", "B. Polonia", "C. Alemania", "D. Japón"],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Cuál fue la principal causa de la caída del Imperio Romano?",
+      "opciones": ["A. Invasiones bárbaras", "B. Crisis económica", "C. Decadencia interna", "D. Todas las anteriores"],
+      "respuesta_correcta": "D"
+    },
+    {
+      "pregunta": "¿Qué civilización construyó las pirámides de Egipto?",
+      "opciones": ["A. Romanos", "B. Griegos", "C. Egipcios", "D. Mayas"],
+      "respuesta_correcta": "C"
+    },
+    {
+      "pregunta": "¿Quién fue el primer presidente de Estados Unidos?",
+      "opciones": ["A. Abraham Lincoln", "B. George Washington", "C. Thomas Jefferson", "D. John Adams"],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Qué evento terminó con la monarquía en Francia?",
+      "opciones": ["A. La Revolución Francesa", "B. La Guerra de los Cien Años", "C. La Revolución Industrial", "D. La caída de Napoleón"],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Cuál fue el propósito de la Liga de Naciones?",
+      "opciones": ["A. Promover la paz mundial", "B. Organizar la guerra", "C. Expandir territorios", "D. Controlar el comercio"],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Qué fue el Renacimiento?",
+      "opciones": ["A. Movimiento cultural y artístico", "B. Guerra civil", "C. Revolución industrial", "D. Descubrimiento geográfico"],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Quién fue Karl Marx?",
+      "opciones": ["A. Filósofo y autor del comunismo", "B. Líder de la Revolución Francesa", "C. Presidente de Rusia", "D. Científico alemán"],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿En qué continente surgieron las primeras civilizaciones?",
+      "opciones": ["A. América", "B. Asia", "C. África", "D. Europa"],
+      "respuesta_correcta": "C"
+    },
+    {
+      "pregunta": "¿Qué país fue el primero en lanzar una bomba atómica en guerra?",
+      "opciones": ["A. Alemania", "B. Japón", "C. Estados Unidos", "D. Unión Soviética"],
+      "respuesta_correcta": "C"
+    },
+    {
+      "pregunta": "¿Quién fue el líder de la Unión Soviética durante la Segunda Guerra Mundial?",
+      "opciones": ["A. Lenin", "B. Stalin", "C. Trotsky", "D. Gorbachov"],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Qué acontecimiento se celebra el 12 de octubre en muchos países de América?",
+      "opciones": ["A. Día de la Independencia", "B. Día de la Raza", "C. Navidad", "D. Fin de la guerra"],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Cuál fue el principal producto comercial de la Ruta de la Seda?",
+      "opciones": ["A. Oro", "B. Seda", "C. Especias", "D. Algodón"],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Qué país fue conocido como la 'Tierra del Sol Naciente'?",
+      "opciones": ["A. China", "B. Japón", "C. Corea", "D. India"],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Qué imperio dominó gran parte de Europa durante la Edad Media?",
+      "opciones": ["A. Imperio Romano", "B. Imperio Carolingio", "C. Imperio Otomano", "D. Imperio Bizantino"],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Qué evento inició la Revolución Industrial?",
+      "opciones": ["A. Invención de la máquina de vapor", "B. Descubrimiento de América", "C. Revolución Francesa", "D. Guerra Mundial"],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Cuál fue la función de la Inquisición en la Edad Media?",
+      "opciones": ["A. Perseguir herejías", "B. Gobernar pueblos", "C. Comercio", "D. Construcción de iglesias"],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Quién fue Galileo Galilei?",
+      "opciones": ["A. Científico y astrónomo italiano", "B. Pintor renacentista", "C. Filósofo griego", "D. Rey francés"],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Qué imperio fue conquistado por Hernán Cortés?",
+      "opciones": ["A. Maya", "B. Azteca", "C. Inca", "D. Olmeca"],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Qué país fue el primero en independizarse en América Latina?",
+      "opciones": ["A. México", "B. Argentina", "C. Haití", "D. Brasil"],
+      "respuesta_correcta": "C"
+    },
+    {
+      "pregunta": "¿Qué evento histórico ocurrió en 1789?",
+      "opciones": ["A. Inicio de la Revolución Francesa", "B. Independencia de México", "C. Fin de la Edad Media", "D. Descubrimiento de América"],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Quién fue el principal líder de la independencia argentina?",
+      "opciones": ["A. José de San Martín", "B. Simón Bolívar", "C. Miguel Hidalgo", "D. Bernardo O'Higgins"],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Cuál era el principal objetivo de las Cruzadas?",
+      "opciones": ["A. Recuperar Tierra Santa", "B. Conquistar América", "C. Expandir el Imperio Romano", "D. Crear universidades"],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Qué invento es atribuido a Johannes Gutenberg?",
+      "opciones": ["A. Imprenta", "B. Telescopio", "C. Máquina de vapor", "D. Reloj mecánico"],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Qué acontecimiento marcó el inicio de la Edad Contemporánea?",
+      "opciones": ["A. Revolución Francesa", "B. Caída del Imperio Romano", "C. Descubrimiento de América", "D. Revolución Industrial"],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Qué filósofo es conocido por su obra 'El contrato social'?",
+      "opciones": ["A. Rousseau", "B. Kant", "C. Hobbes", "D. Voltaire"],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Cuál fue el propósito de la Conferencia de Berlín (1884-1885)?",
+      "opciones": ["A. Repartir África entre potencias europeas", "B. Firmar la paz mundial", "C. Iniciar la Primera Guerra Mundial", "D. Crear la Liga de Naciones"],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Qué país colonizó Australia?",
+      "opciones": ["A. Reino Unido", "B. Francia", "C. España", "D. Portugal"],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Quién escribió 'La Ilíada'?",
+      "opciones": ["A. Homero", "B. Sófocles", "C. Platón", "D. Aristóteles"],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Qué revolución terminó con la monarquía en Rusia?",
+      "opciones": ["A. Revolución de Octubre", "B. Revolución Francesa", "C. Revolución Industrial", "D. Revolución Americana"],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Quién fue el autor de 'El Capital'?",
+      "opciones": ["A. Karl Marx", "B. Adam Smith", "C. John Locke", "D. Friedrich Engels"],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Qué país ganó la Guerra de los Cien Años?",
+      "opciones": ["A. Francia", "B. Inglaterra", "C. España", "D. Portugal"],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Cuál fue la primera civilización en desarrollar la escritura?",
+      "opciones": ["A. Sumerios", "B. Egipcios", "C. Mayas", "D. Romanos"],
+      "respuesta_correcta": "A"
+    }
+],
+  "ciencias": [
+    {
+      "pregunta": "¿Cuál es el planeta más grande del sistema solar?",
+      "opciones": ["A. Saturno", "B. Júpiter", "C. Neptuno", "D. Urano"],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Qué órgano produce la insulina?",
+      "opciones": ["A. Hígado", "B. Páncreas", "C. Riñón", "D. Estómago"],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Qué es la fotosíntesis?",
+      "opciones": [
+        "A. Proceso por el que las plantas producen energía con luz solar",
+        "B. Proceso de respiración de los animales",
+        "C. La digestión de los alimentos",
+        "D. La reproducción celular"
+      ],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Qué tipo de energía produce una central hidroeléctrica?",
+      "opciones": ["A. Energía térmica", "B. Energía nuclear", "C. Energía eléctrica", "D. Energía química"],
+      "respuesta_correcta": "C"
+    },
+    {
+      "pregunta": "¿Cuál es el hueso más largo del cuerpo humano?",
+      "opciones": ["A. Radio", "B. Fémur", "C. Tibia", "D. Húmero"],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Qué elemento químico tiene el símbolo 'O'?",
+      "opciones": ["A. Oro", "B. Oxígeno", "C. Osmio", "D. Oxalato"],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Cuál es el estado del agua a temperatura ambiente?",
+      "opciones": ["A. Sólido", "B. Líquido", "C. Gas", "D. Plasma"],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Qué sistema del cuerpo humano controla las emociones?",
+      "opciones": ["A. Sistema circulatorio", "B. Sistema nervioso", "C. Sistema digestivo", "D. Sistema óseo"],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Qué es un átomo?",
+      "opciones": ["A. La unidad básica de un elemento químico", "B. Una molécula grande", "C. Un compuesto químico", "D. Un organismo"],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Qué planeta es conocido como el planeta rojo?",
+      "opciones": ["A. Venus", "B. Marte", "C. Júpiter", "D. Saturno"],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Qué es un ecosistema?",
+      "opciones": ["A. Comunidad de organismos y su ambiente", "B. Un solo animal en su hábitat", "C. Solo plantas de un lugar", "D. El clima de una región"],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Qué es la gravedad?",
+      "opciones": ["A. Fuerza que atrae objetos hacia la Tierra", "B. Fuerza que aleja objetos", "C. Movimiento de la Tierra", "D. Energía de los alimentos"],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Qué tipo de célula tiene núcleo definido?",
+      "opciones": ["A. Procariota", "B. Eucariota", "C. Bacteria", "D. Virus"],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Qué es el ADN?",
+      "opciones": ["A. Ácido desoxirribonucleico", "B. Una proteína", "C. Un carbohidrato", "D. Un tipo de célula"],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Cuál es el órgano principal del sistema respiratorio?",
+      "opciones": ["A. Corazón", "B. Pulmones", "C. Hígado", "D. Estómago"],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Qué tipo de energía genera una reacción nuclear?",
+      "opciones": ["A. Energía eléctrica", "B. Energía química", "C. Energía nuclear", "D. Energía mecánica"],
+      "respuesta_correcta": "C"
+    },
+    {
+      "pregunta": "¿Qué partícula tiene carga negativa en un átomo?",
+      "opciones": ["A. Protón", "B. Neutrón", "C. Electrón", "D. Quark"],
+      "respuesta_correcta": "C"
+    },
+    {
+      "pregunta": "¿Cuál es el principal gas responsable del efecto invernadero?",
+      "opciones": ["A. Oxígeno", "B. Nitrógeno", "C. Dióxido de carbono", "D. Helio"],
+      "respuesta_correcta": "C"
+    },
+    {
+      "pregunta": "¿Qué es la evaporación?",
+      "opciones": ["A. Cambio de líquido a gas", "B. Cambio de gas a líquido", "C. Cambio de sólido a líquido", "D. Cambio de líquido a sólido"],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Qué aparato del cuerpo humano bombea la sangre?",
+      "opciones": ["A. Pulmones", "B. Estómago", "C. Corazón", "D. Riñones"],
+      "respuesta_correcta": "C"
+    },
+    {
+      "pregunta": "¿Qué es la mitosis?",
+      "opciones": ["A. División celular para reproducción sexual", "B. División celular para crecimiento y reparación", "C. Proceso de digestión celular", "D. Formación de proteínas"],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Qué es un mamífero?",
+      "opciones": ["A. Animal con plumas", "B. Animal que pone huevos", "C. Animal con pelo que alimenta a sus crías con leche", "D. Animal acuático"],
+      "respuesta_correcta": "C"
+    },
+    {
+      "pregunta": "¿Qué órgano filtra la sangre en el cuerpo humano?",
+      "opciones": ["A. Hígado", "B. Pulmones", "C. Riñones", "D. Estómago"],
+      "respuesta_correcta": "C"
+    },
+    {
+      "pregunta": "¿Cuál es la función de los glóbulos rojos?",
+      "opciones": ["A. Defender el cuerpo", "B. Transportar oxígeno", "C. Coagular la sangre", "D. Regular la temperatura"],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Qué fenómeno explica el movimiento de las placas tectónicas?",
+      "opciones": ["A. Corrientes de convección", "B. Gravedad", "C. Fotosíntesis", "D. Evaporación"],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Qué es la densidad?",
+      "opciones": ["A. Masa dividida por volumen", "B. Volumen dividido por masa", "C. Masa multiplicada por volumen", "D. Peso dividido por altura"],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Qué instrumento se usa para medir la presión atmosférica?",
+      "opciones": ["A. Termómetro", "B. Barómetro", "C. Anemómetro", "D. Higrómetro"],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Cuál es la función del cloroplasto en las células vegetales?",
+      "opciones": ["A. Almacenar agua", "B. Realizar la fotosíntesis", "C. Producir energía", "D. Controlar el movimiento celular"],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Qué mineral es fundamental para la formación de huesos?",
+      "opciones": ["A. Hierro", "B. Calcio", "C. Potasio", "D. Sodio"],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Qué gas respiran los seres humanos para vivir?",
+      "opciones": ["A. Dióxido de carbono", "B. Oxígeno", "C. Nitrógeno", "D. Metano"],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Qué es la ley de la conservación de la masa?",
+      "opciones": ["A. La masa cambia con el tiempo", "B. La masa se crea en las reacciones químicas", "C. La masa permanece constante en una reacción química", "D. La masa se pierde en la combustión"],
+      "respuesta_correcta": "C"
+    },
+    {
+      "pregunta": "¿Qué fuerza mantiene a los planetas en órbita alrededor del sol?",
+      "opciones": ["A. Electromagnética", "B. Nuclear", "C. Gravitatoria", "D. Fricción"],
+      "respuesta_correcta": "C"
+    },
+    {
+      "pregunta": "¿Qué tipo de energía produce el sol?",
+      "opciones": ["A. Energía térmica y lumínica", "B. Energía nuclear", "C. Energía química", "D. Energía mecánica"],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Cuál es el órgano que controla el sistema nervioso central?",
+      "opciones": ["A. Corazón", "B. Cerebro", "C. Pulmones", "D. Hígado"],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Qué es la electrólisis?",
+      "opciones": ["A. Descomposición de una sustancia con electricidad", "B. Fusión de dos metales", "C. Proceso de combustión", "D. Formación de enlaces químicos"],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Qué partícula subatómica no tiene carga eléctrica?",
+      "opciones": ["A. Protón", "B. Neutrón", "C. Electrón", "D. Positrón"],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Qué es la capilaridad?",
+      "opciones": ["A. Movimiento del agua en tubos delgados", "B. Tipo de energía solar", "C. Reacción química", "D. Proceso de evaporación"],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Qué fenómeno meteorológico implica vientos fuertes y lluvias intensas?",
+      "opciones": ["A. Tornado", "B. Huracán", "C. Sequía", "D. Niebla"],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Qué es un compuesto químico?",
+      "opciones": ["A. Unión de dos o más elementos", "B. Elemento puro", "C. Mezcla de sustancias", "D. Partícula subatómica"],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Cuál es la función principal del sistema digestivo?",
+      "opciones": ["A. Transportar oxígeno", "B. Eliminar desechos", "C. Procesar alimentos para obtener nutrientes", "D. Controlar el movimiento"],
+      "respuesta_correcta": "C"
+    },
+    {
+      "pregunta": "¿Qué científico propuso la teoría de la relatividad?",
+      "opciones": ["A. Newton", "B. Einstein", "C. Galileo", "D. Curie"],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Qué es la materia?",
+      "opciones": ["A. Todo lo que tiene masa y ocupa espacio", "B. Energía en movimiento", "C. Un tipo de energía", "D. Solo los seres vivos"],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Qué es un fósil?",
+      "opciones": ["A. Restos petrificados de organismos", "B. Un mineral", "C. Una planta", "D. Un tipo de roca"],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Qué es la magnetosfera?",
+      "opciones": ["A. Campo magnético que protege la Tierra", "B. Capa de ozono", "C. Parte de la atmósfera", "D. Núcleo de la Tierra"],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Qué es un orgánulo celular?",
+      "opciones": ["A. Estructura dentro de la célula con función específica", "B. Tipo de célula", "C. Molécula de ADN", "D. Proteína"],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Qué es la biodiversidad?",
+      "opciones": ["A. Variedad de vida en la Tierra", "B. Número de ecosistemas", "C. Población humana", "D. Clima regional"],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Qué es la energía cinética?",
+      "opciones": ["A. Energía del movimiento", "B. Energía almacenada", "C. Energía térmica", "D. Energía química"],
+      "respuesta_correcta": "A"
+    }
+  ],
+  "lengua": [
+    {
+      "pregunta": "¿Cuál es un sinónimo de 'feliz'?",
+      "opciones": ["A. Triste", "B. Alegre", "C. Enfadado", "D. Aburrido"],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Qué es un verbo?",
+      "opciones": [
+        "A. Palabra que expresa acción o estado",
+        "B. Palabra que describe un sustantivo",
+        "C. Palabra que une oraciones",
+        "D. Palabra que nombra personas"
+      ],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Cuál es el plural de 'luz'?",
+      "opciones": ["A. Luzes", "B. Luzes", "C. Luces", "D. Luzs"],
+      "respuesta_correcta": "C"
+    },
+    {
+      "pregunta": "¿Qué es un adjetivo?",
+      "opciones": [
+        "A. Palabra que describe un sustantivo",
+        "B. Palabra que nombra personas",
+        "C. Palabra que une frases",
+        "D. Palabra que expresa acción"
+      ],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Qué es un sustantivo?",
+      "opciones": [
+        "A. Palabra que nombra personas, animales o cosas",
+        "B. Palabra que describe características",
+        "C. Palabra que expresa acción",
+        "D. Palabra que une frases"
+      ],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Cuál de las siguientes palabras es un adverbio?",
+      "opciones": ["A. Rápido", "B. Rápidamente", "C. Feliz", "D. Casa"],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Qué es un pronombre?",
+      "opciones": [
+        "A. Palabra que sustituye al sustantivo",
+        "B. Palabra que describe características",
+        "C. Palabra que une frases",
+        "D. Palabra que expresa acción"
+      ],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Cuál es el tiempo verbal en la frase: 'Ella corre rápido'?",
+      "opciones": ["A. Presente", "B. Pasado", "C. Futuro", "D. Pretérito"],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Qué significa la palabra 'antónimo'?",
+      "opciones": [
+        "A. Palabra con significado igual",
+        "B. Palabra con significado opuesto",
+        "C. Palabra que describe",
+        "D. Palabra que une"
+      ],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Cuál es la función de un verbo en una oración?",
+      "opciones": [
+        "A. Indicar acción o estado",
+        "B. Describir sustantivos",
+        "C. Unir oraciones",
+        "D. Modificar adjetivos"
+      ],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Qué es una oración simple?",
+      "opciones": [
+        "A. Oración con un solo verbo",
+        "B. Oración con varios verbos",
+        "C. Oración sin verbo",
+        "D. Oración interrogativa"
+      ],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Qué es un sujeto en una oración?",
+      "opciones": [
+        "A. La acción que se realiza",
+        "B. La persona, animal o cosa que realiza la acción",
+        "C. El verbo principal",
+        "D. El complemento directo"
+      ],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Qué es un complemento directo?",
+      "opciones": [
+        "A. El sujeto de la oración",
+        "B. Lo que recibe directamente la acción del verbo",
+        "C. El adjetivo calificativo",
+        "D. El verbo auxiliar"
+      ],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Qué es una oración compuesta?",
+      "opciones": [
+        "A. Oración con un solo verbo",
+        "B. Oración con dos o más verbos",
+        "C. Oración sin sujeto",
+        "D. Oración interrogativa"
+      ],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Qué es un sustantivo propio?",
+      "opciones": [
+        "A. Nombre común de personas o cosas",
+        "B. Nombre específico de personas, lugares o cosas",
+        "C. Un adjetivo",
+        "D. Un pronombre"
+      ],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Qué es una metáfora?",
+      "opciones": [
+        "A. Comparación usando 'como'",
+        "B. Sustitución de una palabra por otra con significado parecido",
+        "C. Identificación de una cosa con otra",
+        "D. Repetición de sonidos"
+      ],
+      "respuesta_correcta": "C"
+    },
+    {
+      "pregunta": "¿Qué es una comparación o símil?",
+      "opciones": [
+        "A. Identificación directa de dos cosas",
+        "B. Comparación que usa 'como' o 'parece'",
+        "C. Repetición de sonidos",
+        "D. Alteración del orden lógico"
+      ],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Qué es una aliteración?",
+      "opciones": [
+        "A. Repetición de sonidos iguales o similares en palabras próximas",
+        "B. Comparación entre dos cosas",
+        "C. Contraposición de ideas",
+        "D. Uso exagerado de palabras"
+      ],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Qué es un texto expositivo?",
+      "opciones": [
+        "A. Texto que narra una historia",
+        "B. Texto que explica información de forma clara y ordenada",
+        "C. Texto que persuade",
+        "D. Texto que describe emociones"
+      ],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Qué es un adverbio de modo?",
+      "opciones": [
+        "A. Indica lugar",
+        "B. Indica tiempo",
+        "C. Indica cómo se realiza la acción",
+        "D. Indica cantidad"
+      ],
+      "respuesta_correcta": "C"
+    },
+    {
+      "pregunta": "¿Qué es la tilde diacrítica?",
+      "opciones": [
+        "A. Acento en palabras agudas",
+        "B. Acento que distingue palabras con diferente significado",
+        "C. Acento en palabras graves",
+        "D. Acento en palabras esdrújulas"
+      ],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Qué es un homónimo?",
+      "opciones": [
+        "A. Palabra con igual significado",
+        "B. Palabra que suena igual pero tiene distinto significado",
+        "C. Palabra contraria",
+        "D. Palabra repetida"
+      ],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Qué es una palabra polisémica?",
+      "opciones": [
+        "A. Palabra con un solo significado",
+        "B. Palabra con varios significados",
+        "C. Palabra inventada",
+        "D. Palabra sin significado"
+      ],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Qué son los prefijos?",
+      "opciones": [
+        "A. Morfemas que se añaden al principio de una palabra",
+        "B. Morfemas que se añaden al final de una palabra",
+        "C. Palabras completas",
+        "D. Verbos conjugados"
+      ],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Qué son los sufijos?",
+      "opciones": [
+        "A. Morfemas que se añaden al final de una palabra",
+        "B. Morfemas que se añaden al principio de una palabra",
+        "C. Palabras completas",
+        "D. Pronombres"
+      ],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Qué es una palabra compuesta?",
+      "opciones": [
+        "A. Palabra formada por una sola raíz",
+        "B. Palabra formada por la unión de dos o más palabras",
+        "C. Palabra con sufijos",
+        "D. Palabra con prefijos"
+      ],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Qué es la puntuación?",
+      "opciones": [
+        "A. Uso de letras mayúsculas",
+        "B. Uso de signos para organizar y aclarar el texto",
+        "C. La ortografía de las palabras",
+        "D. La entonación"
+      ],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Qué signo se usa para indicar una pregunta?",
+      "opciones": [
+        "A. Punto",
+        "B. Coma",
+        "C. Signos de interrogación",
+        "D. Dos puntos"
+      ],
+      "respuesta_correcta": "C"
+    },
+    {
+      "pregunta": "¿Qué signo se usa para indicar una exclamación?",
+      "opciones": [
+        "A. Punto",
+        "B. Coma",
+        "C. Signos de exclamación",
+        "D. Dos puntos"
+      ],
+      "respuesta_correcta": "C"
+    },
+    {
+      "pregunta": "¿Qué es un sustantivo abstracto?",
+      "opciones": [
+        "A. Nombre de objetos concretos",
+        "B. Nombre de ideas, sentimientos o cualidades",
+        "C. Nombre propio",
+        "D. Nombre colectivo"
+      ],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Qué es un verbo irregular?",
+      "opciones": [
+        "A. Verbo que sigue reglas normales de conjugación",
+        "B. Verbo que no sigue reglas normales de conjugación",
+        "C. Verbo auxiliar",
+        "D. Verbo compuesto"
+      ],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Qué es una oración interrogativa?",
+      "opciones": [
+        "A. Oración que expresa una orden",
+        "B. Oración que pregunta algo",
+        "C. Oración que afirma algo",
+        "D. Oración exclamativa"
+      ],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Qué es la concordancia en una oración?",
+      "opciones": [
+        "A. Que sujeto y verbo concuerden en número y persona",
+        "B. Que los adjetivos sean sinónimos",
+        "C. Que las oraciones tengan el mismo verbo",
+        "D. Que las palabras rimen"
+      ],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Qué es un sustantivo colectivo?",
+      "opciones": [
+        "A. Nombre de un grupo o conjunto",
+        "B. Nombre individual",
+        "C. Adjetivo calificativo",
+        "D. Verbo"
+      ],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Qué es un texto narrativo?",
+      "opciones": [
+        "A. Texto que cuenta hechos o historias",
+        "B. Texto que explica conceptos",
+        "C. Texto que persuade",
+        "D. Texto descriptivo"
+      ],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Qué es un sujeto tácito o elíptico?",
+      "opciones": [
+        "A. Sujeto explícito en la oración",
+        "B. Sujeto que no aparece pero se sobreentiende",
+        "C. Complemento directo",
+        "D. Verbo"
+      ],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Qué es una perífrasis verbal?",
+      "opciones": [
+        "A. Conjugación de un verbo solo",
+        "B. Unión de dos o más verbos para expresar una acción",
+        "C. Uso de pronombres",
+        "D. Modificación del sujeto"
+      ],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Qué es un determinante?",
+      "opciones": [
+        "A. Palabra que acompaña al sustantivo para concretarlo",
+        "B. Palabra que sustituye al sustantivo",
+        "C. Verbo auxiliar",
+        "D. Adjetivo calificativo"
+      ],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Qué es una figura literaria?",
+      "opciones": [
+        "A. Técnica que usa el autor para embellecer el lenguaje",
+        "B. Regla gramatical",
+        "C. Error ortográfico",
+        "D. Tipo de texto"
+      ],
+      "respuesta_correcta": "A"
+    }
+  ],
+  "geografia": [
+    {
+      "pregunta": "¿Cuál es la capital de Francia?",
+      "opciones": ["A. Madrid", "B. Roma", "C. París", "D. Berlín"],
+      "respuesta_correcta": "C"
+    },
+    {
+      "pregunta": "¿Cuál es la capital de España?",
+      "opciones": ["A. Madrid", "B. Roma", "C. París", "D. Berlín"],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Cuál es el río más largo del mundo?",
+      "opciones": ["A. Amazonas", "B. Nilo", "C. Yangtsé", "D. Misisipi"],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿En qué continente está Egipto?",
+      "opciones": ["A. Asia", "B. África", "C. Europa", "D. América"],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Cuál es el país más grande del mundo por superficie?",
+      "opciones": ["A. China", "B. Canadá", "C. Rusia", "D. Estados Unidos"],
+      "respuesta_correcta": "C"
+    },
+    {
+      "pregunta": "¿Cuál es la capital de Argentina?",
+      "opciones": ["A. Santiago", "B. Buenos Aires", "C. Montevideo", "D. Lima"],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Cuál es la montaña más alta del mundo?",
+      "opciones": ["A. K2", "B. Everest", "C. Kilimanjaro", "D. Mont Blanc"],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Qué océano está entre África y América?",
+      "opciones": ["A. Pacífico", "B. Atlántico", "C. Índico", "D. Ártico"],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿En qué país se encuentra la ciudad de Tokio?",
+      "opciones": ["A. China", "B. Corea del Sur", "C. Japón", "D. Tailandia"],
+      "respuesta_correcta": "C"
+    },
+    {
+      "pregunta": "¿Cuál es el desierto más grande del mundo?",
+      "opciones": ["A. Sahara", "B. Gobi", "C. Kalahari", "D. Atacama"],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Qué país tiene la mayor población del mundo?",
+      "opciones": ["A. India", "B. Estados Unidos", "C. China", "D. Rusia"],
+      "respuesta_correcta": "C"
+    },
+    {
+      "pregunta": "¿Cuál es la capital de México?",
+      "opciones": ["A. Guadalajara", "B. Cancún", "C. Ciudad de México", "D. Monterrey"],
+      "respuesta_correcta": "C"
+    },
+    {
+      "pregunta": "¿En qué continente está Australia?",
+      "opciones": ["A. América", "B. Europa", "C. Oceanía", "D. Asia"],
+      "respuesta_correcta": "C"
+    },
+    {
+      "pregunta": "¿Qué río atraviesa la ciudad de Londres?",
+      "opciones": ["A. Támesis", "B. Sena", "C. Danubio", "D. Rin"],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Cuál es la capital de Canadá?",
+      "opciones": ["A. Toronto", "B. Vancouver", "C. Ottawa", "D. Montreal"],
+      "respuesta_correcta": "C"
+    },
+    {
+      "pregunta": "¿Cuál es el continente con más países?",
+      "opciones": ["A. África", "B. Asia", "C. Europa", "D. América"],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Qué mar separa Europa de África?",
+      "opciones": ["A. Mar Rojo", "B. Mar Mediterráneo", "C. Mar Caribe", "D. Mar Caspio"],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Cuál es el lago más grande del mundo?",
+      "opciones": ["A. Lago Superior", "B. Mar Caspio", "C. Lago Victoria", "D. Lago Baikal"],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Cuál es la capital de Alemania?",
+      "opciones": ["A. Múnich", "B. Berlín", "C. Hamburgo", "D. Frankfurt"],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Cuál es el país más pequeño del mundo?",
+      "opciones": ["A. Mónaco", "B. Nauru", "C. Ciudad del Vaticano", "D. San Marino"],
+      "respuesta_correcta": "C"
+    },
+    {
+      "pregunta": "¿Qué país tiene forma de bota?",
+      "opciones": ["A. España", "B. Italia", "C. Grecia", "D. Portugal"],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿En qué país está Machu Picchu?",
+      "opciones": ["A. Chile", "B. Perú", "C. Bolivia", "D. Ecuador"],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Cuál es la capital de Brasil?",
+      "opciones": ["A. Río de Janeiro", "B. São Paulo", "C. Brasilia", "D. Salvador"],
+      "respuesta_correcta": "C"
+    },
+    {
+      "pregunta": "¿Qué país tiene mayor extensión en América del Sur?",
+      "opciones": ["A. Argentina", "B. Brasil", "C. Colombia", "D. Chile"],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Cuál es el volcán más alto del mundo?",
+      "opciones": ["A. Popocatépetl", "B. Cotopaxi", "C. Ojos del Salado", "D. Etna"],
+      "respuesta_correcta": "C"
+    },
+    {
+      "pregunta": "¿Cuál es el país con más islas del mundo?",
+      "opciones": ["A. Filipinas", "B. Canadá", "C. Indonesia", "D. Suecia"],
+      "respuesta_correcta": "D"
+    },
+    {
+      "pregunta": "¿Cuál es la capital de Egipto?",
+      "opciones": ["A. Alejandría", "B. El Cairo", "C. Luxor", "D. Asuán"],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Cuál es el país más poblado de América?",
+      "opciones": ["A. Brasil", "B. Estados Unidos", "C. México", "D. Argentina"],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Cuál es el principal idioma oficial de Brasil?",
+      "opciones": ["A. Español", "B. Portugués", "C. Inglés", "D. Francés"],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Qué país está formado por islas y es conocido como el Reino Unido?",
+      "opciones": ["A. Irlanda", "B. Reino Unido", "C. Islandia", "D. Australia"],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Cuál es la capital de Rusia?",
+      "opciones": ["A. San Petersburgo", "B. Moscú", "C. Kazán", "D. Novosibirsk"],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Cuál es la capital de Australia?",
+      "opciones": ["A. Sydney", "B. Melbourne", "C. Canberra", "D. Brisbane"],
+      "respuesta_correcta": "C"
+    },
+    {
+      "pregunta": "¿Cuál es la capital de India?",
+      "opciones": ["A. Mumbai", "B. Nueva Delhi", "C. Bangalore", "D. Kolkata"],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Cuál es el continente más pequeño del mundo?",
+      "opciones": ["A. Europa", "B. Oceanía", "C. América", "D. Antártida"],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Qué país está al norte de Estados Unidos?",
+      "opciones": ["A. México", "B. Canadá", "C. Groenlandia", "D. Cuba"],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Qué país está al sur de Estados Unidos?",
+      "opciones": ["A. Canadá", "B. México", "C. Cuba", "D. Brasil"],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Cuál es la capital de Colombia?",
+      "opciones": ["A. Medellín", "B. Cali", "C. Bogotá", "D. Cartagena"],
+      "respuesta_correcta": "C"
+    },
+    {
+      "pregunta": "¿Qué país tiene el mayor número de volcanes activos?",
+      "opciones": ["A. Japón", "B. Indonesia", "C. Estados Unidos", "D. Chile"],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Qué océano está al este de África?",
+      "opciones": ["A. Atlántico", "B. Pacífico", "C. Índico", "D. Ártico"],
+      "respuesta_correcta": "C"
+    },
+    {
+      "pregunta": "¿Cuál es el país más montañoso del mundo?",
+      "opciones": ["A. Suiza", "B. Nepal", "C. Afganistán", "D. Bután"],
+      "respuesta_correcta": "B"
+    },
+    {
+      "pregunta": "¿Cuál es la capital de Chile?",
+      "opciones": ["A. Santiago", "B. Valparaíso", "C. Concepción", "D. Antofagasta"],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Cuál es la capital de Venezuela?",
+      "opciones": ["A. Caracas", "B. Maracaibo", "C. Valencia", "D. Barquisimeto"],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Cuál es la capital de Perú?",
+      "opciones": ["A. Lima", "B. Cusco", "C. Arequipa", "D. Trujillo"],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Cuál es el país con más lenguas oficiales?",
+      "opciones": ["A. Sudáfrica", "B. India", "C. Suiza", "D. Bolivia"],
+      "respuesta_correcta": "A"
+    },
+    {
+      "pregunta": "¿Cuál es el nombre del cinturón de volcanes que rodea el Pacífico?",
+      "opciones": ["A. Cinturón de Fuego", "B. Anillo de Fuego", "C. Franja Volcánica", "D. Zona Sísmica"],
+      "respuesta_correcta": "B"
+    }
+  ]
+}
