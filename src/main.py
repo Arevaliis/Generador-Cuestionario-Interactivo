@@ -5,7 +5,12 @@ import re
 import sys
 
 import pandas as pd
+
 from colorama import Fore, Style
+from inputimeout import inputimeout, TimeoutOccurred
+
+# TODO Test
+# TODO Refactorizar
 
 def main():
     """
@@ -47,7 +52,7 @@ def elegir_accion():
     opc = int(input("Elija una Opción: "))
     match opc:
         case 1: hacer_examen(elegir_materia())
-        case 2: ver_clasficacion()
+        case 2: ver_clasificacion()
         case 3:
                 print("Saliendo...")
                 sys.exit()
@@ -106,9 +111,10 @@ def hacer_examen(opc):
         opc (str): Materia seleccionada.
     """
     preguntas = cargar_preguntas()[opc]
-    TOTAL_PREGUNTAS = 10
-    indice_lista_preguntas = random.sample(range(0, len(preguntas)), TOTAL_PREGUNTAS)
+    total_preguntas = 10
+    indice_lista_preguntas = random.sample(range(0, len(preguntas)), total_preguntas)
     numero_aciertos = 0
+    TIEMPO = 10
 
     for i in indice_lista_preguntas:
         pregunta = preguntas[i]
@@ -117,10 +123,14 @@ def hacer_examen(opc):
         for n in range(len(pregunta["opciones"])):
             print(pregunta["opciones"][n])
 
-        respuesta = input("\n" + "Introduce tu respuesta: ").upper().strip()
-        numero_aciertos += comprobar_respuesta(respuesta, pregunta["respuesta_correcta"] )
+        try:
+            respuesta = inputimeout(prompt="\n" + "Introduce tu respuesta: ", timeout=TIEMPO).upper().strip()
+            numero_aciertos += comprobar_respuesta(respuesta, pregunta["respuesta_correcta"])
+        except TimeoutOccurred:
+            print("Se te acabo el tiempo!\n")
 
-    resultado_final(TOTAL_PREGUNTAS, numero_aciertos)
+
+    resultado_final(total_preguntas, numero_aciertos)
     guardar_puntuacion(numero_aciertos)
 
 def comprobar_respuesta(resp, correcta):
@@ -137,9 +147,8 @@ def comprobar_respuesta(resp, correcta):
     if resp == correcta:
         print(Fore.GREEN + "Correcto" + Style.RESET_ALL + "\n")
         return 1
-    else:
-        print(Fore.RED + "Has fallado" + Style.RESET_ALL + "\n")
-        return 0
+    print(Fore.RED + "Has fallado" + Style.RESET_ALL + "\n")
+    return 0
 
 def resultado_final(total_preguntas, aciertos):
     """
@@ -188,14 +197,38 @@ def almacenar_datos_partida(aciertos):
     Returns:
         _: Nada, es solo para que termine la ejecución de la función.
     """
-    nombre_usuario = input("Introduce tu nombre para el ranking: ").title().strip()
 
-    if re.search(r'[^a-zA-Z]', nombre_usuario):
-        with open("../data/ranking.csv", "a") as file:
-            print("Marca recogida.\n")
-            file.write(f"{nombre_usuario},{aciertos}\n")
+    while True:
+        nombre_usuario = input("Introduce tu nombre para el ranking: ").title().strip()
+
+        if not re.fullmatch(r"[A-Za-z ]+", nombre_usuario):
+            print("El nombre solo puede contener letras.\n")
+        else:
+            if not comprobar_existencia(nombre_usuario):
+                with open("../data/ranking.csv", "a") as file:
+                    file.write(f"\n{nombre_usuario},{aciertos}")
+                    print("Marca recogida.\n")
+                    return
+            else:
+                print("Ya existe el nombre.")
+
+        probar = input("¿Quieres probar de nuevo?: (S/N)").strip().upper()
+        if not probar == "S":
+            print("No se ha registrado la puntuación.\n")
             return
-    print("El nombre solo puede contener letras.\n")
+
+def comprobar_existencia(nombre):
+    """
+        Esta función comprueba si ya existe el nombre dentro del ranking.
+
+        Args:
+            nombre (str): Nombre con el que quiere registrarse el usuario en el ranking.
+
+        Returns:
+            boolean: Nada, es solo para que termine la ejecución de la función.
+        """
+    df_ranking = pd.read_csv("../data/ranking.csv")
+    return df_ranking.nombre.isin([nombre]).any()
 
 def ordenar_ranking():
     """
@@ -205,7 +238,7 @@ def ordenar_ranking():
     df_ordenado = df_ranking.sort_values(by=df_ranking.columns[1], ascending=False)
     df_ordenado.to_csv("../data/ranking.csv", index=False)
 
-def ver_clasficacion():
+def ver_clasificacion():
     """
     Esta función nos muestra la clasificación.
     """
