@@ -1,9 +1,20 @@
 # 🎓 Generador de Cuestionario Interactivo
-Aplicación para crear y realizar exámenes interactivos sobre distintas materias como Matemáticas, Ciencias, Lengua, Historia y Geografía.
+Aplicación por consola para crear y realizar exámenes interactivos sobre distintas materias como Matemáticas, Ciencias, Lengua, Historia y Geografía.
 Además, permite registrar tus calificaciones y llevar un seguimiento de tu rendimiento.
-
 ---
-## 📦 Requisitos
+
+## ▶️ Requisitos de ejecución del Programa
+
+Para que la aplicación funcione correctamente **(especialmente las funciones relacionadas con la entrada por tiempo límite)**, debe ejecutarse desde la consola o terminal del sistema operativo, no desde el propio entorno de desarrollo.
+
+Ejecuta el archivo main.py desde una terminal utilizando los siguientes comandos según tu sistema operativo:
+```bash
+  Comando Para Ejecutar el Programa
+    - Windows -> python main.py
+    - Linux/MacOS -> python3 main.py
+```
+---
+## 📦 Librerias Externas
 
 - pandas ~=2.3.0 
 - colorama ~=0.4.6

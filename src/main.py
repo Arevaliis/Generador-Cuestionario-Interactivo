@@ -1,33 +1,46 @@
 import csv
 import json
+import os
+import platform
 import random
 import re
 import sys
+import time
 
 import pandas as pd
 
 from colorama import Fore, Style
 from inputimeout import inputimeout, TimeoutOccurred
 
-# TODO Test
-# TODO Refactorizar
+# ╔══════════════════════════════════════════════════════════════════════════════════════════════════════════════╗
+# ║                         ESTE PROGRAMA DEBE EJECUTARSE DESDE LA TERMINAL (CMD O BASH)                         ║
+# ║                   NO LO EJECUTES DESDE LA TERMINAL INTEGRADA DEL IDE (NI PYCHARM, NI VS CODE)                ║
+# ║                      PROVOCARIA QUE EL MODULO OS E INPUTUMEOUT NO FUNCIONARAN CORRECTAMENTE                  ║
+# ║                                                                                                              ║
+# ║                              ⇒ UBÍCATE EN: Generador-Cuestionarios-Interactivo\src                           ║
+# ║                                         ⇒ EJECUTA: python main.py                                            ║
+# ╚══════════════════════════════════════════════════════════════════════════════════════════════════════════════╝
 
 def main():
     """
     Esta función ejecuta en bucle el programa hasta que el usuario decide salir.
     """
+    limpiar_consola()
     esta_funcionando = True
 
     while esta_funcionando:
         try:
             mostrar_menu()
-            if 0 < elegir_accion() < 4: # Si introduce un número fuera de los proporcionados no entra en seguir() y vuelve al menu.
+            if 0 < elegir_accion() < 4: # Si introduce un número fuera de los proporcionados nunca ejecutara seguir() si no que directamente vuelve al menu principal.
                 esta_funcionando = seguir()
         except ValueError:
-            print("Debe ingresar un Numero dentro del rango de opciones mostradas. Volviendo al menu.")
+            limpiar_consola()
+            print("Debe ingresar un NUMERO. Volviendo al menu.")
         except IndexError:
+            limpiar_consola()
             print("No puedes introducir campos vacíos o fuera de rango. Volviendo al menu.")
         except KeyError:
+            limpiar_consola()
             print("Materia elegida no valida. Volviendo al menu.")
 
 def mostrar_menu():
@@ -50,27 +63,15 @@ def elegir_accion():
         int: opción elegida por el usuario
     """
     opc = int(input("Elija una Opción: "))
+    limpiar_consola()
     match opc:
         case 1: hacer_examen(elegir_materia())
         case 2: ver_clasificacion()
         case 3:
-                print("Saliendo...")
-                sys.exit()
-        case _: print("Debe ingresar un Numero dentro del rango de opciones mostradas.")
+                print(Fore.GREEN + "\nSaliendo! Hasta otra!" + Style.RESET_ALL)
+                sys.exit() # Permite finalizar programa sin que vuelva nuevamente al menu principal
+        case _: print("Ingrese un valor dentro del rango de opciones mostradas.")
     return opc
-
-def seguir():
-    """
-    Esta función solicita al usuario si desea seguir en el programa o salir.
-
-    Returns:
-        boolean: True si quiere seguir. False si desea salir.
-    """
-    respuesta = input("¿Quiere volver al menu? (S/N)").upper().strip()
-    if respuesta == "S":
-        return True
-    print("\nSaliendo! Hasta otra!")
-    return False
 
 def cargar_preguntas():
     """
@@ -101,22 +102,24 @@ def elegir_materia():
 
     opc = int(input("Elige una materia: "))
     materias = list(cargar_preguntas().keys())
-    return materias[opc - 1] if opc > 0 else None
+    return materias[opc - 1] if opc > 0 else None # Usamos None para forzar el error y volver al Menu
 
-def hacer_examen(opc):
+def hacer_examen(materia):
     """
     Esta función ejecuta el examen. Muestra las preguntas, las opciones y si es correcta la respuesta dada por el usuario.
 
     Args:
         opc (str): Materia seleccionada.
     """
-    preguntas = cargar_preguntas()[opc]
+    preguntas = cargar_preguntas()[materia]
     total_preguntas = 10
     indice_lista_preguntas = random.sample(range(0, len(preguntas)), total_preguntas)
     numero_aciertos = 0
-    TIEMPO = 10
+    tiempo = 10
 
     for i in indice_lista_preguntas:
+        limpiar_consola()
+        print(f"\nTienes {tiempo} segundos por pregunta para responder.\n")
         pregunta = preguntas[i]
         print(pregunta["pregunta"] + "\n")
 
@@ -124,11 +127,12 @@ def hacer_examen(opc):
             print(pregunta["opciones"][n])
 
         try:
-            respuesta = inputimeout(prompt="\n" + "Introduce tu respuesta: ", timeout=TIEMPO).upper().strip()
+            respuesta = inputimeout(prompt="\n" + "Introduce tu respuesta: ", timeout=tiempo).upper().strip()
             numero_aciertos += comprobar_respuesta(respuesta, pregunta["respuesta_correcta"])
+            time.sleep(0.5)
         except TimeoutOccurred:
-            print("Se te acabo el tiempo!\n")
-
+            print(Fore.RED + "Se te acabo el tiempo!\n" + Style.RESET_ALL)
+            time.sleep(0.7)
 
     resultado_final(total_preguntas, numero_aciertos)
     guardar_puntuacion(numero_aciertos)
@@ -145,9 +149,9 @@ def comprobar_respuesta(resp, correcta):
         int: 1 si son iguales 0 si no.
     """
     if resp == correcta:
-        print(Fore.GREEN + "Correcto" + Style.RESET_ALL + "\n")
+        print(Fore.GREEN + "Correcto\n" + Style.RESET_ALL)
         return 1
-    print(Fore.RED + "Has fallado" + Style.RESET_ALL + "\n")
+    print(Fore.RED + "Has fallado\n" + Style.RESET_ALL)
     return 0
 
 def resultado_final(total_preguntas, aciertos):
@@ -161,14 +165,16 @@ def resultado_final(total_preguntas, aciertos):
     Returns:
         tipo: Descripción de lo que retorna la función.
     """
-    valoracion = "Lo has hecho genial !!" if aciertos >= 7 else ("Bien!" if aciertos >= 5 else "Necesitas practicar más. Tu puedes !!")
+    limpiar_consola()
+    porcentaje = (aciertos / total_preguntas) * 100
+    valoracion = "Lo has hecho genial !!" if porcentaje >= 80 else ("Bien!" if porcentaje >= 50 else "Necesitas practicar más. Tu puedes !!")
 
     print(f"""
     ===== Resultado Final Test =====
     
         Total de Preguntas = {total_preguntas}
         Numero de Aciertos = {aciertos}
-        Porcentaje de Aciertos = {(aciertos / total_preguntas) * 100}%
+        Porcentaje de Aciertos = {porcentaje}%
         Valoración final = {valoracion}
         
     =================================
@@ -185,7 +191,8 @@ def guardar_puntuacion(aciertos):
 
     match resp:
         case "S": almacenar_datos_partida(aciertos)
-        case _: print("\nLa proxima vez será!!\n")
+        case _:
+                print("\nLa proxima vez será!!\n")
 
 def almacenar_datos_partida(aciertos):
     """
@@ -197,12 +204,15 @@ def almacenar_datos_partida(aciertos):
     Returns:
         _: Nada, es solo para que termine la ejecución de la función.
     """
+    limpiar_consola()
 
     while True:
-        nombre_usuario = input("Introduce tu nombre para el ranking: ").title().strip()
+        nombre_usuario = input("Introduce tu nombre para el ranking, solo se aceptan letras: ").title().strip()
 
         if not re.fullmatch(r"[A-Za-z ]+", nombre_usuario):
             print("El nombre solo puede contener letras.\n")
+            time.sleep(1.5)
+            limpiar_consola()
         else:
             if not comprobar_existencia(nombre_usuario):
                 with open("../data/ranking.csv", "a") as file:
@@ -211,8 +221,11 @@ def almacenar_datos_partida(aciertos):
                     return
             else:
                 print("Ya existe el nombre.")
+                time.sleep(1.5)
+                limpiar_consola()
 
         probar = input("¿Quieres probar de nuevo?: (S/N)").strip().upper()
+        limpiar_consola()
         if not probar == "S":
             print("No se ha registrado la puntuación.\n")
             return
@@ -251,8 +264,32 @@ def ver_clasificacion():
             if i == 0:
                 continue
             nombre, calificacion = row
-            print(f"\t{i}.{nombre} -> {calificacion}")
+            print(f"   {i}.{nombre} -> {calificacion}")
         print()
+
+def limpiar_consola():
+    """
+    Esta función ejecuta un comando para limpiar la consolo en funcion del sistema operativo
+    """
+    if platform.system() == "Windows":
+        os.system("cls")
+    else:
+        os.system("clear")
+
+def seguir():
+    """
+    Esta función solicita al usuario si desea seguir en el programa o salir.
+
+    Returns:
+        boolean: True si quiere seguir. False si desea salir.
+    """
+    respuesta = input("¿Quiere volver al menu? (S/N)").upper().strip()
+    if respuesta == "S":
+        limpiar_consola()
+        return True
+    limpiar_consola()
+    print(Fore.GREEN + "\nSaliendo! Hasta otra!" + Style.RESET_ALL)
+    return False
 
 if __name__ == "__main__":
     main()
