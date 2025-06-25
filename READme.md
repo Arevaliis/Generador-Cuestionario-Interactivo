@@ -1,6 +1,6 @@
 # 🎓 Generador de Cuestionario Interactivo
-Aplicación por consola para crear y realizar exámenes interactivos sobre distintas materias como Matemáticas, Ciencias, Lengua, Historia y Geografía.
-Además, permite registrar tus calificaciones y llevar un seguimiento de tu rendimiento.
+Aplicación por consola para crear y realizar exámenes interactivos sobre distintas materias como Matemáticas, Ciencias, Lengua, Historia y Geografía. Además, permite registrar tus calificaciones y llevar un seguimiento de tu rendimiento.
+
 ---
 
 ## ▶️ Requisitos de ejecución del Programa
@@ -28,12 +28,11 @@ git clone https://github.com/Arevaliis/Generador-Cueestionario-Interactivo.git
 cd Generador-Cueestionario-Interactivo
 
 Crear un entorno virtual: 
-  - En Windows: venv\Scripts\activate
-  - En macOS/Linux: source venv/bin/activate
+  - python -m venv miEntorno
   
 Activar el entorno virtual: Activa el entorno virtual con el siguiente comando:
-  - En Windows: venv\Scripts\activate
-  - En macOS/Linux: source venv/bin/activate
+  - En Windows: miEntorno\Scripts\activate
+  - En macOS/Linux: source miEntorno/bin/activate
   
 Instalar las dependencias: pip install -r requirements.txt
 
@@ -45,7 +44,7 @@ Instalar las dependencias: pip install -r requirements.txt
 | **Versión** | **Estado** |
 |------------| ---------- |
 | 1.0        | ✅ Completado |
-| 2.0        | 🚧 En progreso |
+| 2.0        | ✅ Completado |
 
 ---
 
