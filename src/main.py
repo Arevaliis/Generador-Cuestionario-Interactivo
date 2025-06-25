@@ -29,21 +29,19 @@ def main():
     esta_funcionando = True
 
     while esta_funcionando:
+        mostrar_menu_principal()
         try:
-            mostrar_menu()
-            if 0 < elegir_accion() < 4: # Si introduce un número fuera de los proporcionados nunca ejecutara seguir() si no que directamente vuelve al menu principal.
-                esta_funcionando = seguir()
-        except ValueError:
-            limpiar_consola()
-            print("Debe ingresar un NUMERO. Volviendo al menu.")
-        except IndexError:
-            limpiar_consola()
-            print("No puedes introducir campos vacíos o fuera de rango. Volviendo al menu.")
-        except KeyError:
-            limpiar_consola()
-            print("Materia elegida no valida. Volviendo al menu.")
+            opc = elegir_accion()
 
-def mostrar_menu():
+            if opc != -1:
+                esta_funcionando = ejecutar_accion(opc)
+
+        except KeyboardInterrupt:
+            limpiar_consola()
+            print(Fore.RED + "El programa ha sido interrumpido de forma manual" + Style.RESET_ALL)
+            sys.exit()
+
+def mostrar_menu_principal():
     """
     Esta función muestra el menu de opciones habilitadas.
     """
@@ -62,26 +60,55 @@ def elegir_accion():
     Returns:
         int: opción elegida por el usuario
     """
-    opc = int(input("Elija una Opción: "))
+    try:
+        return int(input("Elija una Opción: "))
+    except ValueError:
+        limpiar_consola()
+        print(Fore.RED + "Error -> Solo se puede ingresar valores numéricos." + Style.RESET_ALL)
+        return -1
+
+def ejecutar_accion(opc):
+    """
+    Esta función ejecuta la tarea elegida por el usuario.
+
+    Args:
+        opc (int): Opción elegida por el usuario (1, 2 o 3).
+    """
+
     limpiar_consola()
+
     match opc:
-        case 1: hacer_examen(elegir_materia())
+        case 1: hacer_examen()
         case 2: ver_clasificacion()
         case 3:
                 print(Fore.GREEN + "\nSaliendo! Hasta otra!" + Style.RESET_ALL)
                 sys.exit() # Permite finalizar programa sin que vuelva nuevamente al menu principal
-        case _: print("Ingrese un valor dentro del rango de opciones mostradas.")
-    return opc
+        case _:
+                print(Fore.RED + "Error -> Debe ingresar un valor numérico válido (1-2-3)." + Style.RESET_ALL )
+                return True
+    return seguir()
 
 def cargar_preguntas():
     """
     Esta función accede al fichero que contiene las preguntas.
 
     Returns:
-        json: Archivo con todas las preguntas.
+        dict: Archivo.json con todas las preguntas.
     """
     with open("../data/preguntas.json", "r", encoding="utf-8") as file:
         return json.load(file)
+
+def mostrar_opciones_materias():
+    print("""
+        ===== Materias =====
+            1. Matemáticas
+            2. Historia
+            3. Ciencias
+            4. Lengua
+            5. Geografía
+            6. Salir
+        ====================
+        """)
 
 def elegir_materia():
     """
@@ -90,27 +117,36 @@ def elegir_materia():
     Returns:
         str: Devuelve la materia seleccionada
     """
-    print("""
-    ===== Materias =====
-        1. Matemáticas
-        2. Historia
-        3. Ciencias
-        4. Lengua
-        5. Geografía
-    ====================
-    """)
+    mostrar_opciones_materias()
+    volver_a_preguntar = True
 
-    opc = int(input("Elige una materia: "))
-    materias = list(cargar_preguntas().keys())
-    return materias[opc - 1] if opc > 0 else None # Usamos None para forzar el error y volver al Menu
+    while volver_a_preguntar:
+        try:
+            opc = int(input("Elija una materia: "))
 
-def hacer_examen(materia):
+            if opc in range(1,7):
+                return opc
+
+            limpiar_consola()
+            print(Fore.RED + "Error -> Debe ingresar un valor numérico válido (1-2-3-4-5)." + Style.RESET_ALL)
+            mostrar_opciones_materias()
+
+        except ValueError:
+            limpiar_consola()
+            print(Fore.RED + "Error -> Ha ingresado un valor no numérico. Debe ingresar un valor numérico" + Style.RESET_ALL)
+            mostrar_opciones_materias()
+
+def hacer_examen():
     """
     Esta función ejecuta el examen. Muestra las preguntas, las opciones y si es correcta la respuesta dada por el usuario.
-
-    Args:
-        opc (str): Materia seleccionada.
     """
+    indice_materia = elegir_materia()
+
+    if indice_materia == 6:
+        limpiar_consola()
+        return
+
+    materia = list(cargar_preguntas().keys())[indice_materia]
     preguntas = cargar_preguntas()[materia]
     total_preguntas = 10
     indice_lista_preguntas = random.sample(range(0, len(preguntas)), total_preguntas)
@@ -137,16 +173,17 @@ def hacer_examen(materia):
     resultado_final(total_preguntas, numero_aciertos)
     guardar_puntuacion(numero_aciertos)
 
+
 def comprobar_respuesta(resp, correcta):
     """
-    Esta función comprueba si la respuesta dada por el usuario es igual que la contenida.
+    Esta función comprueba si la respuesta dada por el usuario es igual que la contenida en las soluciones.
 
     Args:
         resp (str): Respuesta introducida por el usuario.
         correcta (str): Respuesta correcta.
 
     Returns:
-        int: 1 si son iguales 0 si no.
+        int: 1 si son iguales si no devolverá 0.
     """
     if resp == correcta:
         print(Fore.GREEN + "Correcto\n" + Style.RESET_ALL)
@@ -192,6 +229,7 @@ def guardar_puntuacion(aciertos):
     match resp:
         case "S": almacenar_datos_partida(aciertos)
         case _:
+                limpiar_consola()
                 print("\nLa proxima vez será!!\n")
 
 def almacenar_datos_partida(aciertos):
@@ -207,22 +245,23 @@ def almacenar_datos_partida(aciertos):
     limpiar_consola()
 
     while True:
-        nombre_usuario = input("Introduce tu nombre para el ranking, solo se aceptan letras: ").title().strip()
+        nombre_usuario = input("Introduce tu nombre para el ranking, " + Fore.RED + "solo se aceptan letras en el nombre: " + Style.RESET_ALL).title().strip()
 
         if not re.fullmatch(r"[A-Za-z ]+", nombre_usuario):
-            print("El nombre solo puede contener letras.\n")
+            print(Fore.RED + "El nombre solo puede contener letras.\n" + Style.RESET_ALL)
             time.sleep(1.5)
             limpiar_consola()
+
         else:
             if not comprobar_existencia(nombre_usuario):
                 with open("../data/ranking.csv", "a") as file:
                     file.write(f"\n{nombre_usuario},{aciertos}")
-                    print("Marca recogida.\n")
+                    print(Fore.GREEN + "Marca recogida.\n" + Style.RESET_ALL)
                     return
-            else:
-                print("Ya existe el nombre.")
-                time.sleep(1.5)
-                limpiar_consola()
+
+            print(Fore.RED + "Ya existe el nombre." + Style.RESET_ALL)
+            time.sleep(1.5)
+            limpiar_consola()
 
         probar = input("¿Quieres probar de nuevo?: (S/N)").strip().upper()
         limpiar_consola()
@@ -269,7 +308,7 @@ def ver_clasificacion():
 
 def limpiar_consola():
     """
-    Esta función ejecuta un comando para limpiar la consolo en funcion del sistema operativo
+    Esta función ejecuta un comando para limpiar la consolo en función del sistema operativo usado
     """
     if platform.system() == "Windows":
         os.system("cls")

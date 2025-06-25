@@ -1,6 +1,6 @@
 # 🎓 Generador de Cuestionario Interactivo
-Aplicación por consola para crear y realizar exámenes interactivos sobre distintas materias como Matemáticas, Ciencias, Lengua, Historia y Geografía.
-Además, permite registrar tus calificaciones y llevar un seguimiento de tu rendimiento.
+Aplicación por consola para crear y realizar exámenes interactivos sobre distintas materias como Matemáticas, Ciencias, Lengua, Historia y Geografía. Además, permite registrar tus calificaciones y llevar un seguimiento de tu rendimiento.
+
 ---
 
 ## ▶️ Requisitos de ejecución del Programa
@@ -45,7 +45,7 @@ Instalar las dependencias: pip install -r requirements.txt
 | **Versión** | **Estado** |
 |------------| ---------- |
 | 1.0        | ✅ Completado |
-| 2.0        | 🚧 En progreso |
+| 2.0        | ✅ Completado |
 
 ---
 
