@@ -16,8 +16,9 @@ Ejecuta el archivo main.py desde una terminal utilizando los siguientes comandos
 ---
 ## 📦 Librerias Externas
 
-- pandas ~=2.3.0 
-- colorama ~=0.4.6
+- pandas~=2.3.0
+- colorama~=0.4.6
+- inputimeout~=1.0.4
 ---
 
 ## 💻 Instalación Local
